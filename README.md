@@ -1,7 +1,8 @@
 # lab3
 
 **Wire up display breadboard**
-![alt text](https://github.com/SiWachirawich/lab3/issues/1#issue-491689194)
+
+![circuit](https://user-images.githubusercontent.com/40221875/64620110-7db22100-d40d-11e9-8fb6-bd7f741f76a7.PNG)
 
 **Example**
 ```
