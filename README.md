@@ -1,10 +1,29 @@
-# lab3
+# lab3 7_segment
 
-**Wire up display breadboard**
+# Lab equipment
+	raspberry pi 	1
+	resistor 1k	7
+	NPN Transistor	7
 
+# Theory of operation
+Let’s start by understanding how a single 7-segment display works. 7-segmentThe 7-segment display, as its name implies, is comprised of 7 individually lightable LEDs, labeled A, B, C, D, E, F, and G. There is also a decimal point labeled DP. Each segment is an LED. Recall that an LED has an anode and a cathode. The polarity matters for an LED; the anode voltage must be positive relative to the cathode for the LED to be lit. If the cathode is positive with respect to the anode, the segment is not lit.
+[http://cs107e.github.io/labs/lab2/]
+
+On the 7-segment displays we are using, the cathodes (ground) are connected to NPN transistor which are controlled by GPIO and more 4 GPIO to select digit for display. If all four digit pin have power at the dame time, all 7-segment will have the same display. In other to display different, you need to select the specific digit.
+
+# Wire up display breadboard
+
+## NPN Transistor 2N3904
+NPN Transistor act like a switch. If it has the high signal on the base pin, it will allow some cuurent to flow through between collector and emiiter pin.
+![npn](https://user-images.githubusercontent.com/40221875/64620838-cf0ee000-d40e-11e9-8b3c-69cbe5ed92da.jpg)
+
+## 4 digits 7 segment common anode  
+![7s](https://user-images.githubusercontent.com/40221875/64621239-89064c00-d40f-11e9-9a00-dd89c79a2a18.PNG)
+
+## Schcematic 
 ![circuit](https://user-images.githubusercontent.com/40221875/64620110-7db22100-d40d-11e9-8fb6-bd7f741f76a7.PNG)
 
-**Example**
+# Example 
 ```
 import RPi.GPIO as GPIO
 import time
@@ -52,4 +71,5 @@ except KeyboardInterrupt:
 
 **Exercise**
 1. Show number 9876, all four digits at the same time.
+![20190910_211332](https://user-images.githubusercontent.com/40221875/64621546-0f229280-d410-11e9-9672-5d0287bd9e23.jpg)
 
