@@ -1,4 +1,4 @@
-# lab3 7_segment
+# lab3 7-segment
 
 # Lab equipment
 	raspberry pi 	1
@@ -14,10 +14,10 @@ On the 7-segment displays we are using, the cathodes (ground) are connected to N
 # Wire up display breadboard
 
 ## NPN Transistor 2N3904
-NPN Transistor act like a switch. If it has the high signal on the base pin, it will allow some cuurent to flow through between collector and emiiter pin.
+NPN Transistor act like a switch. If it has the high signal on the base pin, it will allow some current to flow through between collector and emitter pin.
 ![npn](https://user-images.githubusercontent.com/40221875/64620838-cf0ee000-d40e-11e9-8b3c-69cbe5ed92da.jpg)
 
-## 4 digits 7 segment common anode  
+## 4-digits 7-segment common anode  
 ![7s](https://user-images.githubusercontent.com/40221875/64621239-89064c00-d40f-11e9-9a00-dd89c79a2a18.PNG)
 
 ## Schcematic 
