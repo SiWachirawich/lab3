@@ -1,9 +1,12 @@
 # lab3 7-segment
 
+# GROUP of 2
+
 # Lab equipment
 	raspberry pi 	1
 	resistor 1k	7
 	NPN Transistor	7
+	7-segment 	1
 
 # Theory of operation
 Let’s start by understanding how a single 7-segment display works. 7-segmentThe 7-segment display, as its name implies, is comprised of 7 individually lightable LEDs, labeled A, B, C, D, E, F, and G. There is also a decimal point labeled DP. Each segment is an LED. Recall that an LED has an anode and a cathode. The polarity matters for an LED; the anode voltage must be positive relative to the cathode for the LED to be lit. If the cathode is positive with respect to the anode, the segment is not lit.
